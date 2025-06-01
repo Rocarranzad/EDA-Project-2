@@ -47,9 +47,10 @@ print(
     ggplot(city_vehicles_sum, aes(x = year, y = Emissions, color = fips)) +
         geom_point(pch = 21, size = 2) +
         geom_line(size = 0.5) + 
-        labs(title = "PM2.5 Emissions from Motor Vehicle Sources in Baltimore City (1999 - 2008)",
+        labs(title = "PM2.5 Emissions from Motor Vehicle Sources in Baltimore City and Los Angeles County (1999 - 2008)",
              xlab = "Year",
-             ylab = "Total Emissions (Tons)") + 
+             ylab = "Total Emissions (Tons)",
+             color = "County") + 
         theme_minimal()
 )
 dev.off()

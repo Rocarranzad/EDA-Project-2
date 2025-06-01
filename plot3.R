@@ -33,7 +33,7 @@ bc_type_total <- aggregate(Emissions ~ year + type, data = bcNEI, FUN = sum)
 # Plot Baltimore City's "Total Emissions" from 1999 to 2008 (data gathered every 3 years) separated 
 # by type onto a .png file.
 
-png("plot3.png", width = 680, height = 480)
+png("plot3.png", width = 640, height = 480)
 g <- ggplot(data = bc_type_total, aes(x = year, y = Emissions, color = type)) +
     geom_point(size = 2) + 
     geom_line(size = 1) +

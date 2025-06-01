@@ -39,7 +39,7 @@ bc_vehicles_sum <- bc_vehicles %>%
 png("plot5.png", width = 640, height = 480)
 print(
     ggplot(bc_vehicles_sum, aes(x = year, y = Emissions)) +
-        geom_point(size = 2, color = "purple") +
+        geom_point(pch = 1, size = 2, color = "purple") +
         geom_line(size = 1, color = "thistle2") + 
         labs(title = "PM2.5 Emissions from Motor Vehicle Sources in Baltimore City (1999 - 2008)",
              xlab = "Year",
